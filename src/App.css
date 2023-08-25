@@ -1,0 +1,31 @@
+.excel_view  table,.excel_view  th,.excel_view  td {
+  border: var(--p-border-width-1) solid var(--p-color-border-subdued) !important;
+  border-collapse: collapse;
+}
+.excel_view .Polaris-IndexTable__TableCell{
+  padding: 5px var(--p-space-4) ;
+}
+.excel_view .active{
+  background-color:var(--p-color-bg-info-subdued-hover) !important;
+  border: 2px solid rgb(0, 110, 255) !important;
+  border-right:3px solid rgb(0, 110, 255) !important; 
+  border-bottom:3px solid rgb(0, 110, 255) !important;
+}
+.excel_view textarea:focus,.excel_view  input:focus{
+  outline: none !important;
+}
+.custom_input{
+  background-color: transparent;
+  border:none;
+  font-size: inherit;
+}
+.Polaris-HorizontalGrid{
+  min-width: 100px;
+}
+.Polaris-HorizontalStack{
+  min-width: 150px;
+}
+.full_cover{
+  width: 100%;
+  height: 100%;
+}
