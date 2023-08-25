@@ -8,13 +8,13 @@ import {
   OptionList,
 } from '@shopify/polaris';
 import { Columns3Major } from '@shopify/polaris-icons';
-import { useCallback, useContext, useEffect, useState } from 'react';
+import { useCallback, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MyContext } from '../dataset/MyContext';
 
 export function HeaderFull({ headings, setHeadings }: any) {
   let { centralState, saveUpdates } = useContext(MyContext);
-  const { selected, products, persistProducts } = centralState;
+  const { selected } = centralState;
   const [saveEnable, setSaveEnable] = useState(true);
   const [popoverActive, setPopoverActive] = useState(false);
   const togglePopoverActive = useCallback(
